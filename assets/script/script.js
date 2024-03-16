@@ -34,6 +34,16 @@ window.onscroll = () =>{
 
   
 }
+document.getElementById('cv-btn').addEventListener('click', function() {
+    var fileUrl = 'Afaq_Ahmed_Resume.pdf';
+    var a = document.createElement('a');
+    a.href = fileUrl;
+    a.download = 'Afaq_Ahmed_Resume.pdf';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+});
+
 document.addEventListener('DOMContentLoaded', function () {
     ScrollReveal({
       reset: true,
